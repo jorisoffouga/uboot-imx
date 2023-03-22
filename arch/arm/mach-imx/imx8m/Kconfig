@@ -343,6 +343,17 @@ config TARGET_IMX8MP_RSB3720A1_6G
 	select IMX8M_LPDDR4
 endchoice
 
+config TARGET_DEBIX_IMX8MP
+	bool "debix imx8mp LPDDR4 EVK board"
+	select IMX8MP
+	select BINMAN
+	select SUPPORT_SPL
+	select IMX8M_LPDDR4
+	select FSL_CAAM
+	select FSL_BLOB
+	select ARCH_MISC_INIT
+	select SPL_CRYPTO if SPL
+
 source "board/advantech/imx8mp_rsb3720a1/Kconfig"
 source "board/beacon/imx8mm/Kconfig"
 source "board/beacon/imx8mn/Kconfig"
@@ -366,5 +377,5 @@ source "board/technexion/pico-imx8mq/Kconfig"
 source "board/variscite/imx8mn_var_som/Kconfig"
 source "board/toradex/verdin-imx8mm/Kconfig"
 source "board/toradex/verdin-imx8mp/Kconfig"
-
+source "board/debix/imx8mp/Kconfig"
 endif

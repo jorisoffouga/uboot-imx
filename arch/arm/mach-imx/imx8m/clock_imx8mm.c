@@ -49,7 +49,11 @@ int enable_i2c_clk(unsigned char enable, unsigned i2c_num)
 
 static struct imx_int_pll_rate_table imx8mm_fracpll_tbl[] = {
 	PLL_1443X_RATE(1000000000U, 250, 3, 1, 0),
+	PLL_1443X_RATE(933000000U, 311, 2, 2, 0),
+	PLL_1443X_RATE(930000000U, 310, 2, 2, 0),
+	PLL_1443X_RATE(816000000U, 204, 3, 1, 0),
 	PLL_1443X_RATE(800000000U, 200, 3, 1, 0),
+	PLL_1443X_RATE(789000000U, 263, 2, 2, 0),
 	PLL_1443X_RATE(750000000U, 250, 2, 2, 0),
 	PLL_1443X_RATE(650000000U, 325, 3, 2, 0),
 	PLL_1443X_RATE(600000000U, 300, 3, 2, 0),
